@@ -1,0 +1,10 @@
+databaseChangeLog:
+  - changeSet:
+      id: 2_people_table
+      author: Marcin Romaniak
+      changes:
+        - sqlFile:
+            encoding: UTF-8
+            path: 2_people_table.sql
+            relativeToChangelogFile: true
+            endDelimiter: GO

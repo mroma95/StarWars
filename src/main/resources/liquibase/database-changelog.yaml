@@ -1,0 +1,7 @@
+databaseChangeLog:
+  - include:
+      file: changesets/schema/create-schema.yaml
+      relativeToChangelogFile: true
+  - include:
+      file: changesets/tables/application/2_people_table.yaml
+      relativeToChangelogFile: true

@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  sql-server-db:
+    container_name: sql-server-db
+    build:
+      context: ./mssql
+      args:
+        SA_PASSWORD_ARG: "Password12"
+    ports:
+      - 1433:1433

@@ -1,0 +1,10 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1_create_schema
+      author: Marcin Romaniak
+      changes:
+        - sqlFile:
+            encoding: UTF-8
+            path: create-schema.sql
+            relativeToChangelogFile: true
+            endDelimiter: GO
